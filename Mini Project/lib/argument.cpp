@@ -76,3 +76,13 @@ void argument_parsing(int argc, char *argv[], int &num_sensor, int &sampling, in
         }
     }
 }
+void argument_parsing_task2(int argc, char *argv[], std::string &file_name) {
+    if(argc > 1 && argc < 3) {
+        file_name = argv[1];
+    } else if(argc == 1){
+        file_name = "dust_sensor.csv";
+    } else {
+        std::cerr << "Invalid command!";
+        exit(EXIT_FAILURE);
+    }
+}

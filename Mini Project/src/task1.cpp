@@ -7,7 +7,7 @@ int main(int argc, char *argv[]) {
     // create file
     std::string file_name = "dust_sensor.csv";
     
-    argument_parsing(argc, argv, num_sensor, sampling, interval);
-    get_sensor_data(num_sensor, sampling, interval, file_name);
+    argument_parsing_task1(argc, argv, num_sensor, sampling, interval);
+    get_sensor_data_task1(num_sensor, sampling, interval, file_name);
     return 0;
 }
