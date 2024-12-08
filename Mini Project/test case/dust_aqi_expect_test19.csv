@@ -1,0 +1,126 @@
+id,time,value,aqi,pollution
+1,2024:11:11 22:00:00,194.1,244,Very unhealthy
+2,2024:11:11 22:00:00,275.7,325,Hazardous
+3,2024:11:11 22:00:00,391.4,420,Extremely hazardous
+4,2024:11:11 22:00:00,39.3,109,Slightly unhealthy
+5,2024:11:11 22:00:00,377.7,414,Extremely hazardous
+1,2024:11:11 23:00:00,202.1,252,Very unhealthy
+2,2024:11:11 23:00:00,279.9,329,Hazardous
+3,2024:11:11 23:00:00,362.1,406,Extremely hazardous
+4,2024:11:11 23:00:00,38.1,106,Slightly unhealthy
+5,2024:11:11 23:00:00,359.0,404,Extremely hazardous
+1,2024:11:12 00:00:00,200.4,250,Very unhealthy
+2,2024:11:12 00:00:00,265.2,315,Hazardous
+3,2024:11:12 00:00:00,415.6,433,Extremely hazardous
+4,2024:11:12 00:00:00,39.0,109,Slightly unhealthy
+5,2024:11:12 00:00:00,358.3,404,Extremely hazardous
+1,2024:11:12 01:00:00,189.5,239,Very unhealthy
+2,2024:11:12 01:00:00,293.2,343,Hazardous
+3,2024:11:12 01:00:00,359.2,404,Extremely hazardous
+4,2024:11:12 01:00:00,53.6,145,Slightly unhealthy
+5,2024:11:12 01:00:00,336.3,386,Hazardous
+1,2024:11:12 02:00:00,207.7,257,Very unhealthy
+2,2024:11:12 02:00:00,278.0,328,Hazardous
+3,2024:11:12 02:00:00,391.3,420,Extremely hazardous
+4,2024:11:12 02:00:00,43.0,119,Slightly unhealthy
+5,2024:11:12 02:00:00,332.9,382,Hazardous
+1,2024:11:12 03:00:00,209.5,259,Very unhealthy
+2,2024:11:12 03:00:00,252.4,302,Hazardous
+3,2024:11:12 03:00:00,359.6,404,Extremely hazardous
+4,2024:11:12 03:00:00,38.6,108,Slightly unhealthy
+5,2024:11:12 03:00:00,286.3,336,Hazardous
+1,2024:11:12 04:00:00,191.7,241,Very unhealthy
+2,2024:11:12 04:00:00,295.3,345,Hazardous
+3,2024:11:12 04:00:00,388.4,419,Extremely hazardous
+4,2024:11:12 04:00:00,58.4,152,Unhealthy
+5,2024:11:12 04:00:00,374.2,412,Extremely hazardous
+1,2024:11:12 05:00:00,196.1,246,Very unhealthy
+2,2024:11:12 05:00:00,267.0,316,Hazardous
+3,2024:11:12 05:00:00,389.8,420,Extremely hazardous
+4,2024:11:12 05:00:00,50.6,138,Slightly unhealthy
+5,2024:11:12 05:00:00,358.5,404,Extremely hazardous
+1,2024:11:12 06:00:00,200.5,250,Very unhealthy
+2,2024:11:12 06:00:00,267.0,316,Hazardous
+3,2024:11:12 06:00:00,410.7,430,Extremely hazardous
+4,2024:11:12 06:00:00,41.1,114,Slightly unhealthy
+5,2024:11:12 06:00:00,338.0,388,Hazardous
+1,2024:11:12 07:00:00,209.5,259,Very unhealthy
+2,2024:11:12 07:00:00,276.9,326,Hazardous
+3,2024:11:12 07:00:00,398.4,424,Extremely hazardous
+4,2024:11:12 07:00:00,46.8,128,Slightly unhealthy
+5,2024:11:12 07:00:00,354.2,402,Extremely hazardous
+1,2024:11:12 08:00:00,196.6,246,Very unhealthy
+2,2024:11:12 08:00:00,275.2,325,Hazardous
+3,2024:11:12 08:00:00,383.6,417,Extremely hazardous
+4,2024:11:12 08:00:00,70.0,158,Unhealthy
+5,2024:11:12 08:00:00,333.2,383,Hazardous
+1,2024:11:12 09:00:00,188.1,238,Very unhealthy
+2,2024:11:12 09:00:00,277.3,327,Hazardous
+3,2024:11:12 09:00:00,380.9,415,Extremely hazardous
+4,2024:11:12 09:00:00,38.5,108,Slightly unhealthy
+5,2024:11:12 09:00:00,316.9,366,Hazardous
+1,2024:11:12 10:00:00,210.4,260,Very unhealthy
+2,2024:11:12 10:00:00,286.2,336,Hazardous
+3,2024:11:12 10:00:00,380.4,415,Extremely hazardous
+4,2024:11:12 10:00:00,33.6,96,Moderate
+5,2024:11:12 10:00:00,380.1,415,Extremely hazardous
+1,2024:11:12 11:00:00,202.5,252,Very unhealthy
+2,2024:11:12 11:00:00,246.0,296,Very unhealthy
+3,2024:11:12 11:00:00,375.7,413,Extremely hazardous
+4,2024:11:12 11:00:00,56.2,150,Unhealthy
+5,2024:11:12 11:00:00,350.6,400,Extremely hazardous
+1,2024:11:12 12:00:00,187.8,237,Very unhealthy
+2,2024:11:12 12:00:00,268.6,318,Hazardous
+3,2024:11:12 12:00:00,362.4,406,Extremely hazardous
+4,2024:11:12 12:00:00,52.1,142,Slightly unhealthy
+5,2024:11:12 12:00:00,334.4,384,Hazardous
+1,2024:11:12 13:00:00,214.3,264,Very unhealthy
+2,2024:11:12 13:00:00,248.4,298,Very unhealthy
+3,2024:11:12 13:00:00,392.8,421,Extremely hazardous
+4,2024:11:12 13:00:00,44.9,124,Slightly unhealthy
+5,2024:11:12 13:00:00,360.7,405,Extremely hazardous
+1,2024:11:12 14:00:00,207.6,257,Very unhealthy
+2,2024:11:12 14:00:00,266.0,316,Hazardous
+3,2024:11:12 14:00:00,371.2,410,Extremely hazardous
+4,2024:11:12 14:00:00,38.3,107,Slightly unhealthy
+5,2024:11:12 14:00:00,371.1,410,Extremely hazardous
+1,2024:11:12 15:00:00,188.8,238,Very unhealthy
+2,2024:11:12 15:00:00,291.0,340,Hazardous
+3,2024:11:12 15:00:00,390.9,420,Extremely hazardous
+4,2024:11:12 15:00:00,59.5,152,Unhealthy
+5,2024:11:12 15:00:00,351.4,400,Extremely hazardous
+1,2024:11:12 16:00:00,200.3,250,Very unhealthy
+2,2024:11:12 16:00:00,274.2,324,Hazardous
+3,2024:11:12 16:00:00,410.5,430,Extremely hazardous
+4,2024:11:12 16:00:00,36.7,103,Slightly unhealthy
+5,2024:11:12 16:00:00,290.6,340,Hazardous
+1,2024:11:12 17:00:00,207.4,257,Very unhealthy
+2,2024:11:12 17:00:00,254.5,304,Hazardous
+3,2024:11:12 17:00:00,371.5,410,Extremely hazardous
+4,2024:11:12 17:00:00,32.5,94,Moderate
+5,2024:11:12 17:00:00,357.6,404,Extremely hazardous
+1,2024:11:12 18:00:00,195.1,245,Very unhealthy
+2,2024:11:12 18:00:00,261.2,311,Hazardous
+3,2024:11:12 18:00:00,397.6,424,Extremely hazardous
+4,2024:11:12 18:00:00,41.6,115,Slightly unhealthy
+5,2024:11:12 18:00:00,311.5,361,Hazardous
+1,2024:11:12 19:00:00,213.3,263,Very unhealthy
+2,2024:11:12 19:00:00,272.3,322,Hazardous
+3,2024:11:12 19:00:00,369.9,410,Extremely hazardous
+4,2024:11:12 19:00:00,57.8,151,Unhealthy
+5,2024:11:12 19:00:00,302.9,352,Hazardous
+1,2024:11:12 20:00:00,201.8,251,Very unhealthy
+2,2024:11:12 20:00:00,272.0,322,Hazardous
+3,2024:11:12 20:00:00,396.8,423,Extremely hazardous
+4,2024:11:12 20:00:00,45.0,124,Slightly unhealthy
+5,2024:11:12 20:00:00,351.0,400,Extremely hazardous
+1,2024:11:12 21:00:00,208.0,258,Very unhealthy
+2,2024:11:12 21:00:00,232.6,282,Very unhealthy
+3,2024:11:12 21:00:00,406.0,428,Extremely hazardous
+4,2024:11:12 21:00:00,37.4,105,Slightly unhealthy
+5,2024:11:12 21:00:00,373.8,412,Extremely hazardous
+1,2024:11:12 22:00:00,212.3,262,Very unhealthy
+2,2024:11:12 22:00:00,222.7,272,Very unhealthy
+3,2024:11:12 22:00:00,364.5,407,Extremely hazardous
+4,2024:11:12 22:00:00,55.1,149,Slightly unhealthy
+5,2024:11:12 22:00:00,340.9,390,Hazardous

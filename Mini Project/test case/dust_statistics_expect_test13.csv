@@ -1,0 +1,211 @@
+id,pollution,duration
+1,Good,0
+1,Moderate,0
+1,Slightly unhealthy,0
+1,Unhealthy,8
+1,Very unhealthy,33
+1,Hazardous,8
+1,Extremely hazardous,0
+2,Good,3
+2,Moderate,17
+2,Slightly unhealthy,7
+2,Unhealthy,22
+2,Very unhealthy,0
+2,Hazardous,0
+2,Extremely hazardous,0
+3,Good,0
+3,Moderate,0
+3,Slightly unhealthy,0
+3,Unhealthy,0
+3,Very unhealthy,4
+3,Hazardous,26
+3,Extremely hazardous,19
+4,Good,3
+4,Moderate,11
+4,Slightly unhealthy,17
+4,Unhealthy,17
+4,Very unhealthy,1
+4,Hazardous,0
+4,Extremely hazardous,0
+5,Good,0
+5,Moderate,0
+5,Slightly unhealthy,0
+5,Unhealthy,8
+5,Very unhealthy,41
+5,Hazardous,0
+5,Extremely hazardous,0
+6,Good,0
+6,Moderate,0
+6,Slightly unhealthy,0
+6,Unhealthy,0
+6,Very unhealthy,17
+6,Hazardous,32
+6,Extremely hazardous,0
+7,Good,3
+7,Moderate,11
+7,Slightly unhealthy,7
+7,Unhealthy,28
+7,Very unhealthy,0
+7,Hazardous,0
+7,Extremely hazardous,0
+8,Good,0
+8,Moderate,0
+8,Slightly unhealthy,0
+8,Unhealthy,0
+8,Very unhealthy,10
+8,Hazardous,38
+8,Extremely hazardous,1
+9,Good,0
+9,Moderate,0
+9,Slightly unhealthy,0
+9,Unhealthy,0
+9,Very unhealthy,10
+9,Hazardous,39
+9,Extremely hazardous,0
+10,Good,0
+10,Moderate,0
+10,Slightly unhealthy,0
+10,Unhealthy,0
+10,Very unhealthy,1
+10,Hazardous,13
+10,Extremely hazardous,35
+11,Good,0
+11,Moderate,0
+11,Slightly unhealthy,0
+11,Unhealthy,0
+11,Very unhealthy,12
+11,Hazardous,37
+11,Extremely hazardous,0
+12,Good,1
+12,Moderate,6
+12,Slightly unhealthy,9
+12,Unhealthy,32
+12,Very unhealthy,1
+12,Hazardous,0
+12,Extremely hazardous,0
+13,Good,0
+13,Moderate,6
+13,Slightly unhealthy,10
+13,Unhealthy,32
+13,Very unhealthy,1
+13,Hazardous,0
+13,Extremely hazardous,0
+14,Good,0
+14,Moderate,0
+14,Slightly unhealthy,4
+14,Unhealthy,44
+14,Very unhealthy,1
+14,Hazardous,0
+14,Extremely hazardous,0
+15,Good,0
+15,Moderate,0
+15,Slightly unhealthy,0
+15,Unhealthy,0
+15,Very unhealthy,31
+15,Hazardous,18
+15,Extremely hazardous,0
+16,Good,0
+16,Moderate,0
+16,Slightly unhealthy,0
+16,Unhealthy,1
+16,Very unhealthy,1
+16,Hazardous,23
+16,Extremely hazardous,24
+17,Good,0
+17,Moderate,0
+17,Slightly unhealthy,0
+17,Unhealthy,2
+17,Very unhealthy,42
+17,Hazardous,5
+17,Extremely hazardous,0
+18,Good,0
+18,Moderate,0
+18,Slightly unhealthy,0
+18,Unhealthy,0
+18,Very unhealthy,3
+18,Hazardous,25
+18,Extremely hazardous,21
+19,Good,0
+19,Moderate,0
+19,Slightly unhealthy,0
+19,Unhealthy,41
+19,Very unhealthy,8
+19,Hazardous,0
+19,Extremely hazardous,0
+20,Good,0
+20,Moderate,0
+20,Slightly unhealthy,0
+20,Unhealthy,0
+20,Very unhealthy,37
+20,Hazardous,12
+20,Extremely hazardous,0
+21,Good,0
+21,Moderate,0
+21,Slightly unhealthy,0
+21,Unhealthy,0
+21,Very unhealthy,7
+21,Hazardous,42
+21,Extremely hazardous,0
+22,Good,0
+22,Moderate,0
+22,Slightly unhealthy,0
+22,Unhealthy,46
+22,Very unhealthy,3
+22,Hazardous,0
+22,Extremely hazardous,0
+23,Good,0
+23,Moderate,0
+23,Slightly unhealthy,0
+23,Unhealthy,36
+23,Very unhealthy,13
+23,Hazardous,0
+23,Extremely hazardous,0
+24,Good,0
+24,Moderate,0
+24,Slightly unhealthy,0
+24,Unhealthy,0
+24,Very unhealthy,1
+24,Hazardous,24
+24,Extremely hazardous,24
+25,Good,0
+25,Moderate,0
+25,Slightly unhealthy,0
+25,Unhealthy,48
+25,Very unhealthy,1
+25,Hazardous,0
+25,Extremely hazardous,0
+26,Good,2
+26,Moderate,9
+26,Slightly unhealthy,5
+26,Unhealthy,33
+26,Very unhealthy,0
+26,Hazardous,0
+26,Extremely hazardous,0
+27,Good,0
+27,Moderate,0
+27,Slightly unhealthy,0
+27,Unhealthy,0
+27,Very unhealthy,2
+27,Hazardous,15
+27,Extremely hazardous,32
+28,Good,0
+28,Moderate,0
+28,Slightly unhealthy,0
+28,Unhealthy,0
+28,Very unhealthy,2
+28,Hazardous,21
+28,Extremely hazardous,26
+29,Good,0
+29,Moderate,0
+29,Slightly unhealthy,0
+29,Unhealthy,40
+29,Very unhealthy,9
+29,Hazardous,0
+29,Extremely hazardous,0
+30,Good,0
+30,Moderate,0
+30,Slightly unhealthy,0
+30,Unhealthy,9
+30,Very unhealthy,40
+30,Hazardous,0
+30,Extremely hazardous,0

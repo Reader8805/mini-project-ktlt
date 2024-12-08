@@ -1,0 +1,7 @@
+id,time,value,aqi,pollution
+1,2024:11:12 17:00:00,177.8,227,Very unhealthy
+1,2024:11:12 18:00:00,191.8,241,Very unhealthy
+1,2024:11:12 19:00:00,177.5,227,Very unhealthy
+1,2024:11:12 20:00:00,176.1,226,Very unhealthy
+1,2024:11:12 21:00:00,189.9,239,Very unhealthy
+1,2024:11:12 22:00:00,209.5,259,Very unhealthy

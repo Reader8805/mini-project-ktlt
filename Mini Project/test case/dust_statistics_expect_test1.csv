@@ -1,0 +1,8 @@
+id,pollution,duration
+1,Good,0
+1,Moderate,3
+1,Slightly unhealthy,10
+1,Unhealthy,12
+1,Very unhealthy,0
+1,Hazardous,0
+1,Extremely hazardous,0
