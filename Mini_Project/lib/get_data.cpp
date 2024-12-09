@@ -133,8 +133,23 @@ void get_hour(std::ifstream &file, std::vector<timeStamp> &time_stamp) {
         if (id == "id" && time == "time" && value == "value") {
         continue;
         }
+        // get the hour
+        std::stringstream ss1(time);
+        std::string date, hour_and_value;
+        std::getline(ss1, date, ' ');
+        std::getline(ss1, hour_and_value, ' ');
+        std::stringstream ss2(hour_and_value);
+        std::string initial_hour;
+        std::getline(ss2, initial_hour, ':');
+        int final_hour = stoi(initial_hour);
+        final_hour++;
+        std::string full_times;
         float sensor_value = stof(value);
-        std::string full_times = id + ',' + time.substr(0, 13) + ":00:00";
+        if(final_hour < 10) {
+            full_times = id + ',' + time.substr(0, 11) + "0" + std::to_string(final_hour) + ":00:00";      
+        } else {
+            full_times = id + ',' + time.substr(0, 11) + std::to_string(final_hour) + ":00:00";
+        }
         // get the time_stamp e.g:1,2024:12:7 23:00:00
         
         bool flag = false; // to check if the time has already in the vector e.g: 2024:12:7 23:00:00
