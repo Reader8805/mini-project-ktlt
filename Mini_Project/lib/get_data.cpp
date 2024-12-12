@@ -95,29 +95,41 @@ float aqi_calculation(float value) {
     } 
     else if(value >= 12 && value < 35.5) {
         rate_of_change = (100.0 - 50) / (35.5-12);
-        aqi = 50 + (value - 12) * rate_of_change + 0.5;
+        aqi = 50.0 + (value - 12) * rate_of_change + 0.5;
     } 
     else if(value >= 35.5 && value < 55.5) {
         rate_of_change = (150.0 - 150) / (55.5-35.5);
-        aqi = 100 + (value - 35.5) * rate_of_change + 0.5;
+        aqi = 100.0 + (value - 35.5) * rate_of_change + 0.5;
     } 
     else if(value >= 55.5 && value < 150.5) {
         rate_of_change = (200.0 - 150) / (150.5-55.5);
-        aqi = int(150 + (value - 55.5) * rate_of_change) + 0.5;
+        aqi = 150.0 + (value - 55.5) * rate_of_change + 0.5;
     } 
     else if(value >= 150.5 && value < 250.5) {
         rate_of_change = (300.0 - 200) / (250.5 - 150.5);
-        aqi = 200 + (value - 150.5) * rate_of_change + 0.5;
+        aqi = 200.0 + (value - 150.5) * rate_of_change + 0.5;
     } 
     else if(value >= 250.5 && value < 350.5) {
         rate_of_change = (400.0 - 300) / (350.5 - 250.5);
-        aqi = 300 + (value - 250.5) * rate_of_change+ 0.5;
+        aqi = 300.0 + (value - 250.5) * rate_of_change+ 0.5;
     } 
     else if(value >= 350.5 && value <= 550.5) {
         rate_of_change = (500.0 - 400) / (550.5 - 350.5);
-        aqi = 400 + (value - 350.5) * rate_of_change + 0.5;
+        aqi = 400.0 + (value - 350.5) * rate_of_change + 0.5;
     } 
     return aqi;
+}
+
+void bubble_sort(std::vector<timeStamp> &time_stamp) {
+    for (unsigned long step = 0; step < time_stamp.size(); step++) {
+        for (unsigned long i = 0; i < time_stamp.size() - step - 1; i++) {
+            if (time_stamp[i].hour > time_stamp[i + 1].hour || 
+                (time_stamp[i].hour == time_stamp[i + 1].hour && time_stamp[i].id > time_stamp[i + 1].id)) {
+                // Swap entries if they are out of order
+                std::swap(time_stamp[i], time_stamp[i + 1]);
+            }
+        }
+    }
 }
 
 void get_hour(std::ifstream &file, std::vector<timeStamp> &time_stamp) {
@@ -145,24 +157,26 @@ void get_hour(std::ifstream &file, std::vector<timeStamp> &time_stamp) {
         final_hour++;
         std::string full_times;
         float sensor_value = stof(value);
+        // get the time_stamp e.g:2024:12:7 23:00:00
         if(final_hour < 10) {
-            full_times = id + ',' + time.substr(0, 11) + "0" + std::to_string(final_hour) + ":00:00";      
+            full_times = time.substr(0, 11) + "0" + std::to_string(final_hour) + ":00:00";      
         } else {
-            full_times = id + ',' + time.substr(0, 11) + std::to_string(final_hour) + ":00:00";
+            full_times = time.substr(0, 11) + std::to_string(final_hour) + ":00:00";
         }
-        // get the time_stamp e.g:1,2024:12:7 23:00:00
-        
+
         bool flag = false; // to check if the time has already in the vector e.g: 2024:12:7 23:00:00
         for(unsigned int i = 0; i < time_stamp.size(); i++) {
-            if(time_stamp[i].hour == full_times) {
+            if(time_stamp[i].hour == full_times && time_stamp[i].id == stoi(id)) {
                 time_stamp[i].values.push_back(sensor_value);
                 flag = true;
                 break;
             }
         } 
+        bubble_sort(time_stamp);
         if(flag == false) { // if the time are not in the vector
             // create new struct for the new hour
             timeStamp newTime;
+            newTime.id = stoi(id);
             newTime.hour = full_times;
             newTime.values.push_back(sensor_value);
             // push the new struct into the vector
@@ -217,7 +231,7 @@ void get_sensor_data_task22(std::string fileName) {
         float average = sum / time_stamp[i].values.size();
         int aqi = aqi_calculation(average);
         std::string pollution = pollution_level(aqi);
-        output << time_stamp[i].hour << ',' << std::fixed << std::setprecision(1) << average << ',' << aqi << ',' << pollution << '\n';
+        output << time_stamp[i].id << ',' << time_stamp[i].hour << ',' << std::fixed << std::setprecision(1) << average << ',' << aqi << ',' << pollution << '\n';
     }
         output.close();
         readingFile.close();

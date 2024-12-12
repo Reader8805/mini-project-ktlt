@@ -8,6 +8,7 @@
 #include "file_management.hpp"
 
 typedef struct {
+    int id;
     std::string hour;
     std::vector <float> values;
 } timeStamp;
