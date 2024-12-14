@@ -36,7 +36,7 @@ void write_file_task1(std::ofstream &file, int num_sensor, std::string time, flo
         file << num_sensor << ',' << time << ',' << std::fixed << std::setprecision(1) <<sensor_value << '\n';
 }
 
-void write_file_task2(std::ofstream &output_file, std::vector <std::string> vt, int flag) {
+void write_file_task21(std::ofstream &output_file, std::vector <std::string> vt, int flag) {
     if(flag == 1) {
         output_file << "number of outliers: " << vt.size() << "\n";
     }

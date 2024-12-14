@@ -1,6 +1,6 @@
 #include "argument.hpp"
 
-void argument_parsing(int argc, char *argv[], int &num_sensor, int &sampling, int &interval) { 
+void argument_parsing_task1(int argc, char *argv[], int &num_sensor, int &sampling, int &interval) { 
     // set the default if the below conditions are not satisfied
     num_sensor = 1; 
     sampling = 60;

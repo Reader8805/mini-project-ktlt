@@ -20,7 +20,7 @@ id,time,value,aqi,pollution
 4,2024:11:12 01:00:00,365.9,408,Extremely hazardous 
 5,2024:11:12 01:00:00,200.6,250,Very unhealthy
 1,2024:11:12 02:00:00,368.3,409,Extremely hazardous 
-2,2024:11:12 02:00:00,54.8,100,Slightly unhealthy
+2,2024:11:12 02:00:00,54.8,148,Slightly unhealthy
 3,2024:11:12 02:00:00,346.3,396,Hazardous
 4,2024:11:12 02:00:00,387.4,418,Extremely hazardous 
 5,2024:11:12 02:00:00,217.5,267,Very unhealthy
@@ -45,7 +45,7 @@ id,time,value,aqi,pollution
 4,2024:11:12 06:00:00,385.8,418,Extremely hazardous 
 5,2024:11:12 06:00:00,186.8,236,Very unhealthy
 1,2024:11:12 07:00:00,367.9,409,Extremely hazardous 
-2,2024:11:12 07:00:00,53.0,100,Slightly unhealthy
+2,2024:11:12 07:00:00,53.0,144,Slightly unhealthy
 3,2024:11:12 07:00:00,388.4,419,Extremely hazardous 
 4,2024:11:12 07:00:00,368.7,409,Extremely hazardous 
 5,2024:11:12 07:00:00,176.4,226,Very unhealthy
@@ -75,7 +75,7 @@ id,time,value,aqi,pollution
 4,2024:11:12 12:00:00,343.1,393,Hazardous
 5,2024:11:12 12:00:00,209.4,259,Very unhealthy
 1,2024:11:12 13:00:00,333.1,383,Hazardous
-2,2024:11:12 13:00:00,50.3,100,Slightly unhealthy
+2,2024:11:12 13:00:00,50.3,137,Slightly unhealthy
 3,2024:11:12 13:00:00,349.5,399,Hazardous
 4,2024:11:12 13:00:00,374.6,412,Extremely hazardous 
 5,2024:11:12 13:00:00,189.1,239,Very unhealthy
@@ -85,7 +85,7 @@ id,time,value,aqi,pollution
 4,2024:11:12 14:00:00,407.9,429,Extremely hazardous 
 5,2024:11:12 14:00:00,216.0,266,Very unhealthy
 1,2024:11:12 15:00:00,387.6,419,Extremely hazardous 
-2,2024:11:12 15:00:00,52.3,100,Slightly unhealthy
+2,2024:11:12 15:00:00,52.3,142,Slightly unhealthy
 3,2024:11:12 15:00:00,352.9,401,Extremely hazardous 
 4,2024:11:12 15:00:00,346.1,396,Hazardous
 5,2024:11:12 15:00:00,175.7,225,Very unhealthy
@@ -120,7 +120,7 @@ id,time,value,aqi,pollution
 4,2024:11:12 21:00:00,386.0,418,Extremely hazardous 
 5,2024:11:12 21:00:00,196.2,246,Very unhealthy
 1,2024:11:12 22:00:00,412.4,431,Extremely hazardous 
-2,2024:11:12 22:00:00,50.4,100,Slightly unhealthy
+2,2024:11:12 22:00:00,50.4,137,Slightly unhealthy
 3,2024:11:12 22:00:00,391.9,421,Extremely hazardous 
 4,2024:11:12 22:00:00,348.7,398,Hazardous
 5,2024:11:12 22:00:00,198.7,248,Very unhealthy
