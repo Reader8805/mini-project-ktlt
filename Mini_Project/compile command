@@ -1,2 +1,5 @@
 g++ -Wall -Wextra -Ilib -o dust_sim.exe src/main.cpp lib/argument.cpp lib/file_management.cpp lib/get_data.cpp
 g++ -Wall -Wextra -Ilib -o dust_process.exe src/task2.cpp lib/argument.cpp lib/file_management.cpp lib/get_data.cpp
+/*********************************************************************/
+g++ -Wall -Wextra -Ilib -o dust_sim.exe task_1/main.cpp task_1/argument.cpp task_1/file_management.cpp task_1/get_data.cpp
+g++ -Wall -Wextra -Ilib -o dust_process.exe task_2/main.cpp task_2/check_condition.cpp task_2/argument.cpp task_2/file_management.cpp task_2/get_data.cpp

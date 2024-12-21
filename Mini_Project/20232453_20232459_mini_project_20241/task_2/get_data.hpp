@@ -1,12 +1,12 @@
 #pragma once
 
 #include <algorithm> // for std::sort
-#include <random>
-#include <ctime>
 #include <vector>
 #include <sstream>
 #include "file_management.hpp"
+#include "check_condition.hpp"
 #include <map>
+
 typedef struct {
     int id;
     std::string hour;
@@ -18,11 +18,7 @@ typedef struct {
     std::vector <std::string> date;
     std::vector <float> values;
 } timeStatistics;
-//generate random sensor 
-typedef std::default_random_engine random_num_generator;
-typedef std::uniform_real_distribution<double> distribution;
-// for task 1
-void get_sensor_data_task1(int num_sensor, int sampling, int interval, std::string file_name);
+
 //for task 2 - 2.2
 void get_sensor_data_task21(float lower_zone, float higher_zone,std::string reading_file);
 float aqi_calculation(float value);
@@ -36,4 +32,5 @@ void write_data_task_23(std::string fileName);
 void get_statistics(std::ifstream &file, std::vector<timeStatistics> &time_stamp);
 int get_interval(std::string fileName);
 void get_median(int i, std::vector<timeStatistics> time_stamp);
+//task 2.4
 void access_aqi_24(std::string open_file, std::string store_file);
