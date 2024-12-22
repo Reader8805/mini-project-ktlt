@@ -32,3 +32,11 @@ void open_input_file(std::ifstream &file, std::string fileName) {
     }
 }
 
+void count_data(std::ifstream &file, int &line_count) {
+    std::string fileContent;
+    line_count = 0;
+    while(getline(file, fileContent)) 
+    {
+        line_count++; // count the data line excepts the first line
+    }
+}

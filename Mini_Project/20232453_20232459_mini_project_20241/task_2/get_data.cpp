@@ -11,17 +11,6 @@ void get_sensor_data_task21(float lower_zone, float higher_zone, std::string rea
     create_output_file(valid, "dust_valid.csv");
     create_output_file(outlier, "dust_outlier.csv");
 
-    int count;
-    count_data(readingFile, count);
-    // check the max data points
-    if(count > 10000) // max data points is 10000
-    { 
-        log << "Error 06: input file is too large\n";
-        log.close();
-        exit(EXIT_FAILURE);
-    }
-    readingFile.clear(); //reset the EOF flag
-    readingFile.seekg(0); //reset the file pointer to the beginning
     std::string line;
     int line_number = 0;
     std::vector<std::string> duplicate_content;
@@ -164,7 +153,21 @@ void bubble_sort(std::vector<timeStamp> &time_stamp) {
         }
     }
 }
-                                                     
+void increment_date(std::string &date) {
+    std::tm tm = {};
+    std::stringstream ss(date);
+    ss >> std::get_time(&tm, "%Y:%m:%d");
+    
+    tm.tm_mday += 1;  // Increment the day
+    
+    // Normalize the tm structure to handle month or year changes,
+    mktime(&tm);
+
+    std::stringstream new_date;
+    new_date << std::put_time(&tm, "%Y:%m:%d");
+    
+    date = new_date.str();
+}                                                   
 void get_hour(std::ifstream &file, std::vector<timeStamp> &time_stamp) {
     std::string line;
     while(getline(file, line)) 
@@ -180,6 +183,7 @@ void get_hour(std::ifstream &file, std::vector<timeStamp> &time_stamp) {
         {
         continue;
         }
+        
         // get the hour
         std::stringstream ss1(time);
         std::string date, hour_and_value;
@@ -193,7 +197,11 @@ void get_hour(std::ifstream &file, std::vector<timeStamp> &time_stamp) {
         std::string full_times;
         float sensor_value = stof(value);
         // get the time_stamp e.g:2024:12:7 23:00:00
-        if(final_hour < 10) 
+        if (final_hour == 24) {
+            increment_date(date);  // Increment the date
+            full_times = date + " 00:00:00";  // Set hour to 00:00:00 for next day
+        }
+        else if(final_hour < 10) 
         {
             full_times = time.substr(0, 11) + "0" + std::to_string(final_hour) + ":00:00";      
         } 
@@ -301,6 +309,7 @@ void get_max_statistics(int i, std::vector<timeStatistics> time_stamp, std::stri
         }
         value = temp;
     }
+
 void get_min_statistics(int i, std::vector<timeStatistics> time_stamp, std::string &min_hour, float &value) {
        float temp = time_stamp[0].values[0];
         // int position = 0;

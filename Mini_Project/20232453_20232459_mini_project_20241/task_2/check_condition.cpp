@@ -36,7 +36,19 @@ void csv_file_data_check(std::string &fileName) { // check the data and write to
         log.close();
         exit(EXIT_FAILURE);
     }
-    // bool header_found = false;
+    int count;
+    count_data(file, count);
+    // check the max data points
+    if(count > 10000) // max data points is 10000
+    { 
+        log << "Error 06: input file is too large\n";
+        log.close();
+        exit(EXIT_FAILURE);
+    }
+    file.clear(); //reset the EOF flag
+    file.seekg(0); //reset the file pointer to the beginning
+
+    
     std::string line;
     int line_number = 0;
     int position;
@@ -60,6 +72,7 @@ void csv_file_data_check(std::string &fileName) { // check the data and write to
             exit(EXIT_FAILURE);
         }
     }
+    
     while(getline(file, line)) 
     {
         line_number++;
@@ -71,13 +84,18 @@ void csv_file_data_check(std::string &fileName) { // check the data and write to
         // skip the header file
         
         // check for missing/invalid data
-        if(id.empty() || time.empty() || value.empty() || id_check(id) ==  false 
-        || time_check(time) == false || value_check(value) == false) 
+        if(id.empty() || time.empty() || value.empty()) 
         {
             log  <<  "Error 04: data is missing at line " << line_number << "\n";
             log.flush();
             continue;
         } 
+        else if(id_check(id) ==  false || time_check(time) == false || value_check(value) == false) 
+        {
+            log  <<  "Error 02: invalid csv file format\n";
+            log.flush();
+            continue;
+        }
         // check the duplicate data
         bool duplicate = false;
         for(unsigned int i = 0; i < duplicate_content.size(); i++) {

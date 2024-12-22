@@ -24,7 +24,7 @@ void get_sensor_data_task1(int num_sensor, int sampling, int interval, std::stri
         
         // convert the time into human readeable time
 
-        time_stamp_stream << std:: put_time(readable_time, "%Y:%m:%d %H:%M:%S"); 
+        time_stamp_stream << std::put_time(readable_time, "%Y:%m:%d %H:%M:%S"); 
         //get the sensor values
     
         for(int id = 1; id <= num_sensor; id++) 

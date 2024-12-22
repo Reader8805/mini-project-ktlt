@@ -13,3 +13,4 @@ typedef std::ifstream inputFile;
 
 void create_output_file(std::ofstream &file, std::string fileName);
 void open_input_file(std::ifstream &file, std::string fileName);
+void count_data(std::ifstream &file, int &line_count);
